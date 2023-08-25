@@ -1,16 +1,16 @@
-### Install Docker and Docker Compose
+## Install Docker and Docker Compose
 
 - **[Ubuntu](https://docs.docker.com/engine/install/ubuntu/)**
 - **[CentOS](https://docs.docker.com/engine/install/centos/)**
 - **[RHEL](https://docs.docker.com/engine/install/rhel/)**
 
-#### Run
+### Run
 ```bash
 git clone https://github.com/ybucci/mysql56-docker.git
 cd mysql56-docker
 docker-compose up -d
 ```
-#### Change root password
+### Change root password
 
 1. After start mysql, you need to change root password, for that, get the generated password with the command above
 
@@ -24,11 +24,11 @@ docker logs mysql 2>&1 | grep "GENERATED" | awk '{print $8}'
 docker exec -it mysql mysqladmin --user=root  --password password "$NEW_PASSWORD"
 ```
 
-#### Create New Databases and Users
+### Create New Databases and Users
 
 1. Run script **01-create-db_user.sh**
 
-#### Commands
+### Commands
 
 **Start MySQL**
 
