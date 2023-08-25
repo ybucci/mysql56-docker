@@ -12,7 +12,7 @@ docker-compose up -d
 ```
 #### Change root password
 
-1. After start mysql, how need to change root password, for that get the generated password with above command
+1. After start mysql, you need to change root password, for that, get the generated password with the command above
 
 ```bash
 docker logs mysql 2>&1 | grep "GENERATED" | awk '{print $8}'
