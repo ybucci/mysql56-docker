@@ -5,6 +5,12 @@
 - **[RHEL](https://docs.docker.com/engine/install/rhel/)**
 - **[Debian](https://docs.docker.com/engine/install/debian/)**
 
+### Install Git
+```
+apt-get install git
+yum install git
+```
+
 ### Run
 ```bash
 git clone https://github.com/ybucci/mysql56-docker.git
